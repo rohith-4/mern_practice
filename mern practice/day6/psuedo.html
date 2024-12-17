@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        color: red;
+        background-color: white;
+      }
+      h1:hover {
+        color: red;
+        font-style: italic;
+        font-size: 100px;
+      }
+      a:hover {
+        background: yellow;
+      }
+      a:active {
+        color: red;
+      }
+
+      /* attribute selector */
+      [placeholder]{
+        color: red;
+        border: 2px solid green;
+      }
+      input[type="text"]{
+        border-radius: 10px;
+        width: 250px;
+        height: 100px;
+      }
+      li:nth-child(even){
+        color: rgb(200, 26, 26);
+      }
+      li:nth-child(odd){
+        color: rgb(4, 16, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <button>submit</button>
+    <br />
+    <a href="https://www.geeksforgeeks.0rg">
+    this is link
+    </a>
+    <p>
+      This paragraph contains a link:
+      <a href="#">This link will turn red while you click on it.</a>
+      The paragraph will get a gray background while you click on it or the
+      link.
+    </p>
+    <br><br>
+    <form action="">
+        <input type="text" name="" id="" placeholder="enter your name">
+    </form>
+    <br>
+    <br>
+    <h2>Web languages</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Ruby</li>
+        <li>PHP</li>
+    </ul>
+  </body>
+</html>

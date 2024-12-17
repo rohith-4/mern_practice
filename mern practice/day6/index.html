@@ -1,0 +1,101 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div tag</title>
+    <style>
+        h1,p{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading1">this is demo for selectors</h1>
+    <p class="para">this is para</p>
+    <div>
+        <p>this is para inside div tag</p>
+    </div>
+    <p>this is para outside div tag</p>   
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+    <style>
+        div>p{
+            color: aquamarine;
+        }
+        span{
+            background-color: brown;
+        }
+        div > p{
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <p>this is direct child that we will target</p>
+    <div>
+        <span>this is nested child</span>
+    </div>
+   </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+    <style>
+        /* div>p{
+            color: aquamarine;
+        }
+        p{
+            background-color: brown;
+        }
+        div >span{
+            background-color: black;
+
+        } */
+        /* <!-- adjecent sibling selector --> */
+        /* h1+p{
+            color: blueviolet;
+        } */
+         /* if we want to target the second or the thisrd paragraph then add tat many number of p tags */
+         /* general sibling selector */
+
+         h1 ~ p{
+            color: brown;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+   <!-- <div>
+    <p>this is direct child that we will target</p>
+    <div>
+        <span>this is nested child</span>
+    </div>
+   </div> -->
+
+
+   <!-- adjecent sibling selector -->
+   <h1>Heading</h1>
+   <p>paragraph 1</p>
+   <p>paragraph 2</p>
+   <p>paragraph 3</p>
+</body>
+</html>
+
+   
