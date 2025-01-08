@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .task{
+            width: 80%;
+            height: 50vh;
+            margin: auto;
+            background-color: gainsboro;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1:hover{
+            font-size: 2rem;
+            width: 90%;
+            height: 40vh;
+        }
+        p{
+            font-size: 1.2em;
+        }
+        .button{
+            padding: 10px 45px;
+        }
+        .circle{
+            background-color: blue;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /* align-content: center; */
+        }
+        .fl{
+            position: absolute;
+            right: 50px;
+            width: 3px;
+            height: 100%;
+            background-color: white;
+        }
+        .line1{
+            rotate: 30deg;
+        }
+        .line2{
+            rotate: 60deg;
+        }
+        .line3{
+            rotate: 90deg;
+        }
+        .line4{
+            rotate: 120deg;
+        }
+        .line5{
+            rotate: 150deg;
+        }
+        .line6{
+            rotate: 180deg;
+        }
+        .line7{
+            rotate: 210deg;
+        }
+    </style>                                                                  
+</head>
+<body>
+    <div class="task">
+        <h1>CSE DEPARTMENT</h1>
+        <p>I am CSE-A section</p>
+        <div class="button">
+           <button>SUBMIT</button>
+          </div>
+    </div>
+    <div class="circle">
+        <div class="line1 fl"></div>
+        <div class="line2 fl"></div>
+        <div class="line3 fl"></div>
+        <div class="line4 fl"></div>
+        <div class="line5 fl"></div>
+        <div class="line6 fl"></div>
+        <div class="line7 fl"></div>
+    </div>
+
+</body>
+</html>
+
