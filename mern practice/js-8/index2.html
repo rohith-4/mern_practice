@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightgray;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        button{
+            padding: 10px 20px;
+            border: none;
+            font-size: larger;
+            cursor: pointer;
+        }
+        h1{
+            font-size: 50px;
+        }
+        @media screen and (max-width: 600px){
+            div{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="decrement">-</button>
+        <button id="increment">+</button>
+    </div>
+    <h1 id="text">0</h1>
+    <script>
+        let count = 0;
+        document.getElementById('increment').addEventListener('click', () => {
+            count++;
+            document.getElementById('text').textContent = count;
+        });
+        document.getElementById('decrement').addEventListener('click', () => {
+            count--;
+            if(count<0){
+                alert("cant go beyond this");
+                return;
+            }
+            document.getElementById('text').textContent = count;
+        });
+    </script>
+</body>
+</html>

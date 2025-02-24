@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d27575;
+        }
+        .out{
+            width: 100vw;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="overview">
+        <center><h1>Will you go out with me?</h1></center>
+        <div class="out">
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+    <script>
+        const yes = document.getElementById('yes');
+        const no = document.getElementById('no');
+        no.addEventListener('mouseover',()=>{
+            let x=Math.floor(Math.random()*(500-150)+150);
+            let y=Math.floor(Math.random()*(500-150)+150);
+            no.style.marginTop=`${y}px`;
+            no.style.marginLeft=`${x}px`;
+        })
+    </script>
+</body>
+</html>

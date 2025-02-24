@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="basicform">
+        <label for="">name: <input type="text" name="" id="name" placeholder="enter your name"></label>
+        <br>
+        <label for="">
+            email: <input type="email" name="" placeholder="enter your email" id="email">
+        </label>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        const form = document.getElementById('basicform');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // check if name and email are not empty
+            if (name === '' || email === '') {
+                alert('Please fill in all fields.');
+                return;
+            }
+            
+            // check if email is valid
+            // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            // if (!emailRegex.test(email)) {
+            //     alert('Please enter a valid email address.');
+            //     return;
+            // }
+            
+            // display the form data to the user
+            alert(`Name: ${name}\nEmail: ${email}`);
+        });
+    </script>
+</body>
+</html>

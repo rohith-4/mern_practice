@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        form {
+            width: 200px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <form  id="form" action="">
+        <label for="username">username:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="password">password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit" id="submitt">
+            Submit
+        </button>
+    </form>
+    <script>
+          const form=document.getElementById("form");
+            form.addEventListener("submit",(e)=>{
+                // console.log(e);
+                e.preventDefault();
+                alert(`form submit with details like:${form.fname.value} ${form.password.value}`);
+            })
+
+    </script>
+</body>
+</html>

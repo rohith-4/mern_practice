@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <input type="text" name="user" id="user" placeholder="username">
+</body>
+<script>
+    const btn = document.getElementById("btn");
+        btn.addEventListener ('dblclick', () => {
+        alert("double clicked");
+        btn.textContent = "btn is double clicked";
+    });
+    // userInput.active = false;
+    const userInput = document.getElementById("user");
+    userInput.addEventListener ('blur', () => {
+        alert("blurred");
+    });
+    userInput.addEventListener ('focus', () => {
+        alert("focused");
+    });
+</script>
+</html>

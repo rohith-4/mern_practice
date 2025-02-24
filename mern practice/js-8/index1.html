@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* transition: transform 1s; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div id="box1">Hover me</div>
+    <p id="keydown"></p>
+    <button id="clickBtn">Click me</button>
+    <script>
+        //Element.addEventListener(event,callbackfunction);
+        // Event: 'click', 'keydown', 'keyup', 'load', 'scroll', 'resize','focus',
+        // 'blur', 'change', 'input', 'submit', 'contextmenu'
+        // document.body.addEventListener('click', function() {
+        //     alert('You clicked on the body');
+        // });
+        const clickbtn=document.getElementById('clickBtn');
+        clickbtn.addEventListener('click',()=>{
+            alert('You clicked on the button');
+        })
+        let hoverBox=document.getElementById('box1');
+        hoverBox.addEventListener('mouseover',()=>{
+            hoverBox.style.transform='scale(1.1)';
+            hoverBox.style.backgroundColor="blue";
+        })
+        hoverBox.addEventListener('mouseout',()=>{
+            hoverBox.style.transform='scale(1.0)';
+            hoverBox.style.backgroundColor="red";
+        })
+        // hoverBox.addEventListener('mousedown',()=>{
+        //     hoverBox.style.transform='scale(1.0)';
+        //     hoverBox.style.backgroundColor="red";
+        // })
+        let keyDown=document.getElementById('keydown');
+        document.addEventListener('keydown',(event)=>{
+            keyDown.textContent='Key pressed: '+event.key+event.keyCode;
+        })
+    </script>
+</body>
+</html>

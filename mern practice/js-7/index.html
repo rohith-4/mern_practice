@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM DEMO</title>
+  </head>
+  <body>
+    <!-- we can target using id -->
+    <h1 class="example">Hello, AITAM</h1>
+    <p>hello</p>
+    <p>rohith</p>
+    <ul>
+        <li>java</li>
+        <li>python</li>
+        <li>c++</li>
+    </ul>
+
+    </h1>
+    <button onclick="changeText()">Click Me</button>
+    <script>
+      function changeText() {
+        // let e=document.querySelector(".example").innerHTML="rohith";
+        document.getElementsByClassName("example")[0].innerHTML="rohith";
+        let f=document.getElementsByTagName("p")[0];
+        f.innerHTML="babu";
+        console.log(f);
+        let list=document.querySelectorAll("li");
+        console.log(list.length);
+        list.forEach((item)=>{
+            item.style.color="red";
+            item.style.fontsize="20px";
+        })
+      }
+    //   let list=document.querySelectorAll("li");
+    //     console.log(list.length);
+    //     list.forEach((item)=>{
+    //         item.style.color="red";
+    //         item.style.fontsize="20px";
+    //     })
+      
+    </script>
+  </body>
+</html>
